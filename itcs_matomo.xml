@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.*" type="plugin" group="system" method="upgrade">
+	<name>System - itcs Matomo</name>
+	<author>itcs</author>
+	<creationDate>January 2022</creationDate>
+	<copyright>Copyright it-conserv.de 2021</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@it-conserv.de</authorEmail>
+	<authorUrl>www.it-conserv.de</authorUrl>
+	<version>1.1.2</version>
+	<description>
+	<![CDATA[
+	<div class="alert alert-success" style="background-color:#DFF0D8;border-color:#D6E9C6;color: #468847;padding: 1px 0;">
+		<div align="center">
+			<h2 style="color: #f39c12;">Itcs Matomo Plugin</h2>
+			<p>Version 1.1.2</p>
+			<h4>A Plugin for the Matomo Analytics Tool</h4>
+			<p> </p>
+			<p>Insert here the tracking code, which should come into the Head area.</p>
+			<p>In addition, insert the iframe Custom Opt-Out code to be included in the privacy statement.<br />
+			Simply enter the short code <strong>{matomo_opt_out}</strong> in the privacy statement.</p>
+			<p><strong>Please activate the plugin and enter the codes.</strong></p>
+			<p>Copyright 2022 <a href="http://www.it-conserv.de/" title="it-conserv.de" rel="noopener noreferrer" target="_blank">www.it-conserv.de</a>.</p>
+		</div>
+     <style>table.adminform{width: 100%;}</style>
+	 </div>
+		]]>
+	</description>
+	<languages>
+		<language tag="de-DE">language/de-DE/plg_system_itcs_matomo.ini</language>
+		<language tag="en-GB">language/en-GB/plg_system_itcs_matomo.ini</language>
+		<language tag="fr-FR">language/fr-FR/plg_system_itcs_matomo.ini</language>
+	</languages>
+	<updateservers>
+		<server type="extension" priority="2" name="Plugin itcs Matomo">
+			https://it-conserv.de/phocadownload/plugins/itcs_matomo/itcs_matomo-update.xml
+		</server>
+	</updateservers>
+	<changelogurl>https://it-conserv.de/phocadownload/plugins/itcs_matomo/itcs_matomo-changelog.xml</changelogurl>
+	<files>
+		<filename plugin="itcs_matomo">itcs_matomo.php</filename>
+		<filename>index.html</filename>
+		<filename>lizenz_gpl.txt</filename>
+		<folder>language</folder>
+		<folder>fields</folder>
+	</files>
+	
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/itcs_matomo/fields">
+			<fieldset name="basic">
+				<field
+					type="itcsdonation"
+					label="ITCS_DONATION" 
+					description="ITCS_DONATION_DESC"
+				/>
+				<field
+					name="hcode"
+					type="editor"
+					label="ITCS_MATOMO_ANALYTIC_CODE"
+					description="ITCS_MATOMO_ANALYTIC_CODE_DESC"
+					editor="codemirror|none"
+					buttons="no"
+					height="500px"
+					rows="20"
+					cols="80"
+					syntax="html"
+					filter="raw"
+				/>
+				<field
+					name="optout_note" 
+					type="note"
+					label="ITCS_MATOMO_OPTOUT_NOTE"
+					description="ITCS_MATOMO_OPTOUT_NOTE_DESC"
+				/>
+				<field
+					name="optout"
+					type="editor"
+					label="ITCS_MATOMO_OPTOUT_CODE"
+					description="ITCS_MATOMO_OPTOUT_CODE_DESC"
+					editor="codemirror|none"
+					buttons="no"
+					height="500px"
+					rows="20"
+					cols="80"
+					syntax="html"
+					filter="raw"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -32,15 +32,7 @@ class JFormFieldItcsDonation extends FormField
 		<button class="btn btn-success" onclick="window.open(\'https://www.paypal.me/peerluks/10EUR\');" type="button"><span class="icon-thumbs-up icon-white" aria-hidden="true"></span> 10 €</button>
 		<button class="btn btn-success" onclick="window.open(\'https://www.paypal.me/peerluks/15EUR\');" type="button"><span class="icon-heart-2 icon-white" aria-hidden="true"></span> 15 €</button>
 		<button class="btn btn-success" onclick="window.open(\'https://www.paypal.me/peerluks/\');" type="button"><span class="icon-star icon-white" aria-hidden="true"></span> # €</button>
-		<p>' . Text::_('ITCS_DONATION_DESC') . '</p>
 		';
 		return $html;
 	}
-
-	/*
-	protected function getLabel()
-	{
-		return Text::_('ITCSDONATION'); //ITCSDONATION="Projekt unterstützen?"
-	}
-	*/
 }

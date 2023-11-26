@@ -1,4 +1,4 @@
-## Plugin "Matomo
+# Plugin itcs Matomo
 This Plugin has two fields integrated.
 
 * Copy in the first field your tracking-code

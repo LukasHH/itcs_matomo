@@ -35,4 +35,11 @@ class JFormFieldItcsDonation extends FormField
 		';
 		return $html;
 	}
+
+	/*
+	protected function getLabel()
+	{
+		return Text::_('ITCSDONATION'); //ITCSDONATION="Projekt unterstützen?"
+	}
+	*/
 }

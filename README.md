@@ -27,4 +27,4 @@ You must generated the tracking-code and optout-code in your matomo-system, not 
 Please observe the respective national laws. This plugin does not check whether cookies are used or whether consent has been given.
 
 ## Download an more information
-[it-conserv.de](https://it-conserv.de/joomla/module/openhours.html)
+[it-conserv.de](https://it-conserv.de/joomla/plugins/matomo-plugin.html)
